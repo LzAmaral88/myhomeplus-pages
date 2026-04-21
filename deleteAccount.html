@@ -1,116 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Exclusão de conta – MyHomePlus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 32px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    }
-    h1 {
-      color: #d32f2f;
-      margin-bottom: 16px;
-    }
-    h2 {
-      margin-top: 32px;
-      color: #444;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    .warning {
-      background-color: #fff3f3;
-      border-left: 4px solid #d32f2f;
-      padding: 12px;
-      margin: 20px 0;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Exclusão de conta – MyHomePlus</title>
+
+<style>
+:root {
+    --primary: #0E755A;
+    --background-top: #0E755A;
+    --background-body: #F4F6F8;
+    --card: #FFFFFF;
+    --text-primary: #1C1C1C;
+    --text-secondary: #555;
+    --radius: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--background-top);
+}
+
+.header {
+    padding: 30px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content-wrapper {
+    background: var(--background-body);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 25px 18px 40px 18px;
+    min-height: 100vh;
+}
+
+.paragraph {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+ul {
+    padding-left: 18px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.warning {
+    background-color: #fff3f3;
+    border-left: 4px solid #d32f2f;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    color: #777;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Exclusão de conta – MyHomePlus</h1>
 
-    <p>
-      O <strong>MyHomePlus</strong> permite que os usuários solicitem a exclusão completa
-      de suas contas diretamente pelo aplicativo, de forma simples e segura.
-    </p>
+<div class="header">
+    Exclusão de conta
+</div>
 
-    <h2>Como excluir sua conta</h2>
-    <p>
-      A exclusão da conta é realizada exclusivamente dentro do app MyHomePlus:
-    </p>
-    <ul>
-      <li>Abra o aplicativo <strong>MyHomePlus</strong>;</li>
-      <li>Acesse o menu <strong>Configurações</strong>;</li>
-      <li>Selecione a opção <strong>Excluir conta</strong>;</li>
-      <li>Confirme sua identidade (senha ou biometria) para concluir a exclusão.</li>
-    </ul>
+<div class="content-wrapper">
 
-    <div class="warning">
-      <strong>Atenção:</strong> a exclusão da conta é permanente e não poderá ser desfeita.
-    </div>
+<div class="paragraph">
+O <span class="bold">MyHomePlus</span> permite que os usuários solicitem a exclusão completa
+de suas contas diretamente pelo aplicativo, de forma simples e segura.
+</div>
 
-    <h2>Dados que são excluídos</h2>
-    <p>
-      Ao excluir sua conta, os seguintes dados são removidos de forma definitiva:
-    </p>
-    <ul>
-      <li>Conta do usuário;</li>
-      <li>Dados pessoais (como e-mail e identificador do usuário);</li>
-      <li>Tarefas, listas, compras, senhas e configurações;</li>
-      <li>Histórico e informações associadas ao uso do aplicativo.</li>
-    </ul>
+<!-- Como excluir -->
+<div class="section">
+<div class="section-title">Como excluir sua conta</div>
+<div class="card">
 
-    <h2>Dados de família</h2>
-    <p>
-      O MyHomePlus utiliza grupos familiares para organização dos dados:
-    </p>
-    <ul>
-      <li>
-        Se o usuário for <strong>membro comum</strong> de uma família, apenas seus dados
-        pessoais serão excluídos, e a família permanecerá ativa.
-      </li>
-      <li>
-        Se o usuário for o <strong>administrador (master)</strong> de uma família que
-        ainda possua outros membros, a exclusão da conta não será permitida até que
-        todos os convidados sejam removidos.
-      </li>
-      <li>
-        Caso o usuário seja o <strong>único membro</strong> da família, todos os dados
-        da família serão excluídos junto com a conta.
-      </li>
-    </ul>
+<div class="paragraph">
+A exclusão da conta é realizada exclusivamente dentro do app MyHomePlus:
+</div>
 
-    <h2>Dados mantidos</h2>
-    <p>
-      Após a exclusão da conta, <strong>nenhum dado pessoal é mantido</strong> pelo MyHomePlus.
-    </p>
+<ul>
+<li>Abra o aplicativo <span class="bold">MyHomePlus</span>;</li>
+<li>Acesse o menu <span class="bold">Configurações</span>;</li>
+<li>Clique para editar seu <span class="bold">Perfil</span>;</li>
+<li>Selecione a opção <span class="bold">Excluir conta</span>;</li>
+<li>Confirme sua identidade (senha ou biometria) para concluir a exclusão.</li>
+</ul>
 
-    <footer>
-      <p>MyHomePlus – Gerenciamento inteligente do seu lar.</p>
-    </footer>
-  </div>
+<div class="warning">
+<strong>Atenção:</strong> a exclusão da conta é permanente e não poderá ser desfeita.
+</div>
+
+</div>
+</div>
+
+<!-- Dados excluídos -->
+<div class="section">
+<div class="section-title">Dados que são excluídos</div>
+<div class="card">
+
+<div class="paragraph">
+Ao excluir sua conta, os seguintes dados são removidos de forma definitiva:
+</div>
+
+<ul>
+<li>Conta do usuário;</li>
+<li>Dados pessoais (como e-mail e identificador do usuário);</li>
+<li>Tarefas, listas, compras, senhas e configurações;</li>
+<li>Histórico e informações associadas ao uso do aplicativo.</li>
+</ul>
+
+</div>
+</div>
+
+<!-- Dados de família -->
+<div class="section">
+<div class="section-title">Dados de família</div>
+<div class="card">
+
+<div class="paragraph">
+O MyHomePlus utiliza grupos familiares para organização dos dados:
+</div>
+
+<ul>
+<li>
+Se o usuário for <span class="bold">membro comum</span> de uma família, apenas seus dados
+pessoais serão excluídos, e a família permanecerá ativa.
+</li>
+<li>
+Se o usuário for o <span class="bold">administrador (master)</span> de uma família que
+ainda possua outros membros, a exclusão da conta não será permitida até que
+todos os convidados sejam removidos.
+</li>
+<li>
+Caso o usuário seja o <span class="bold">único membro</span> da família, todos os dados
+da família serão excluídos junto com a conta.
+</li>
+</ul>
+
+</div>
+</div>
+
+<!-- Dados mantidos -->
+<div class="section">
+<div class="section-title">Dados mantidos</div>
+<div class="card">
+
+<div class="paragraph">
+Após a exclusão da conta, <span class="bold">nenhum dado pessoal é mantido</span> pelo MyHomePlus.
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 MyHomePlus
+</footer>
+
+</div>
 </body>
 </html>
