@@ -1,85 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Termos de Uso - MyHomePlus</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-        background-color: #F5F6FA;
-        color: #1C1C1E;
-    }
+:root {
+    --primary: #0E755A;
+    --background-top: #0E755A;
+    --background-body: #F4F6F8;
+    --card: #FFFFFF;
+    --text-primary: #1C1C1C;
+    --text-secondary: #555;
+    --radius: 18px;
+}
 
-    .top-bar {
-        background-color: #2D6CDF;
-        height: 80px;
-    }
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--background-top);
+}
 
-    .container {
-        max-width: 900px;
-        margin: -40px auto 40px auto;
-        background: #FFFFFF;
-        padding: 30px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
+.header {
+    padding: 30px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
 
-    h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
+.content-wrapper {
+    background: var(--background-body);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    padding: 25px 18px 40px 18px;
+    min-height: 100vh;
+}
 
-    .update {
-        margin-bottom: 30px;
-        font-size: 14px;
-        opacity: 0.7;
-    }
+.paragraph {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    white-space: pre-line;
+}
 
-    h2 {
-        margin-top: 35px;
-        font-size: 18px;
-    }
+.section {
+    margin-top: 30px;
+}
 
-    p {
-        line-height: 1.6;
-        margin: 10px 0;
-    }
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
 
-    ul {
-        margin: 10px 0 10px 20px;
-    }
+.card {
+    background: var(--card);
+    padding: 18px;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-    li {
-        margin-bottom: 6px;
-    }
+.bold {
+    font-weight: 600;
+    color: var(--text-primary);
+}
 
-    .highlight {
-        font-weight: 600;
-    }
+ul {
+    padding-left: 18px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 6px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    color: #777;
+}
 </style>
 </head>
 
 <body>
 
-<div class="top-bar"></div>
+<div class="header">
+    Termos de Uso
+</div>
 
-<div class="container">
+<div class="content-wrapper">
 
-<h1>Termos de Uso</h1>
+<div class="paragraph">
+Última atualização: 01 de março de 2026
+</div>
 
-<p class="update">Última atualização: 01 de março de 2026</p>
+<div class="paragraph">
+Bem-vindo ao MyHomePlus.
+</div>
 
-<h2 style="text-align:center;">Bem-vindo ao MyHomePlus.</h2>
+<div class="paragraph">
+Ao criar uma conta ou utilizar o aplicativo, você declara que leu, compreendeu e concorda com estes Termos de Uso e com a Política de Privacidade.
+</div>
 
-<p>Ao criar uma conta ou utilizar o aplicativo, você declara que leu, compreendeu e concorda com estes Termos de Uso e com a Política de Privacidade.</p>
-<p>Caso não concorde com qualquer condição, não utilize o aplicativo.</p>
+<div class="paragraph">
+Caso não concorde com qualquer condição, não utilize o aplicativo.
+</div>
 
-<h2>1. SOBRE O APLICATIVO</h2>
+<!-- 1 -->
+<div class="section">
+<div class="section-title">1. SOBRE O APLICATIVO</div>
+<div class="card">
 
-<p>O MyHomePlus é um aplicativo de gerenciamento doméstico e familiar, podendo incluir funcionalidades como:</p>
+<div class="paragraph">
+O MyHomePlus é um aplicativo de gerenciamento doméstico e familiar, podendo incluir funcionalidades como:
+</div>
 
 <ul>
 <li>Lista e histórico de compras.</li>
@@ -89,20 +128,42 @@
 <li>Recursos premium.</li>
 </ul>
 
-<p>As funcionalidades podem ser atualizadas, modificadas ou descontinuadas a qualquer momento.</p>
+<div class="paragraph">
+As funcionalidades podem ser atualizadas, modificadas ou descontinuadas a qualquer momento.
+</div>
 
-<h2>2. CONTROLADOR</h2>
+</div>
+</div>
 
-<p>O aplicativo é desenvolvido e administrado por:</p>
+<!-- 2 -->
+<div class="section">
+<div class="section-title">2. CONTROLADOR</div>
+<div class="card">
 
-<p class="highlight">Luiz Antonio da Silva Amaral</p>
-<p><span class="highlight">Contato:</span> luizantonio.dsa@gmail.com</p>
+<div class="paragraph">
+O aplicativo é desenvolvido e administrado por:
+</div>
 
-<p>Nos termos da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), Luiz Antonio atua como Controlador dos dados pessoais tratados no aplicativo.</p>
+<div class="paragraph">
+<span class="bold">Luiz Antonio da Silva Amaral</span><br>
+<span class="bold">Contato:</span> luizantonio.dsa@gmail.com
+</div>
 
-<h2>3. CADASTRO E RESPONSABILIDADE DA CONTA</h2>
+<div class="paragraph">
+Nos termos da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), Luiz Antonio atua como Controlador dos dados pessoais tratados no aplicativo.
+</div>
 
-<p>Para acessar determinadas funcionalidades, o usuário deverá:</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="section">
+<div class="section-title">3. CADASTRO E RESPONSABILIDADE DA CONTA</div>
+<div class="card">
+
+<div class="paragraph">
+Para acessar determinadas funcionalidades, o usuário deverá:
+</div>
 
 <ul>
 <li>Criar uma conta com e-mail válido.</li>
@@ -110,15 +171,29 @@
 <li>Manter suas credenciais em segurança.</li>
 </ul>
 
-<p>O usuário é integralmente responsável por qualquer atividade realizada em sua conta.</p>
+<div class="paragraph">
+O usuário é integralmente responsável por qualquer atividade realizada em sua conta.
+</div>
 
-<p>O MyHomePlus não se responsabiliza por acessos indevidos decorrentes de negligência, compartilhamento de senha ou falhas de segurança do próprio dispositivo do usuário.</p>
+<div class="paragraph">
+O MyHomePlus não se responsabiliza por acessos indevidos decorrentes de negligência, compartilhamento de senha ou falhas de segurança do próprio dispositivo do usuário.
+</div>
 
-<h2>4. TRATAMENTO DE DADOS</h2>
+</div>
+</div>
 
-<p>O uso do aplicativo envolve o tratamento de dados pessoais conforme descrito na Política de Privacidade.</p>
+<!-- 4 -->
+<div class="section">
+<div class="section-title">4. TRATAMENTO DE DADOS</div>
+<div class="card">
 
-<p>O tratamento ocorre com base em:</p>
+<div class="paragraph">
+O uso do aplicativo envolve o tratamento de dados pessoais conforme descrito na Política de Privacidade.
+</div>
+
+<div class="paragraph">
+O tratamento ocorre com base em:
+</div>
 
 <ul>
 <li>Execução de contrato (uso do aplicativo).</li>
@@ -127,19 +202,27 @@
 <li>Cumprimento de obrigações legais.</li>
 </ul>
 
-<p>Os dados podem ser armazenados em infraestrutura fornecida por terceiros, como o Google LLC, por meio da plataforma Firebase.</p>
+<div class="paragraph">
+Os dados podem ser armazenados em infraestrutura fornecida por terceiros, como o Google LLC, por meio da plataforma Firebase.
+</div>
 
-<h2>5. COFRE DE SENHAS</h2>
+</div>
+</div>
 
-<p>O módulo de cofre de senhas destina-se exclusivamente ao uso pessoal do usuário.</p>
+<!-- 5 -->
+<div class="section">
+<div class="section-title">5. COFRE DE SENHAS</div>
+<div class="card">
 
-<p>As informações armazenadas nesse módulo são protegidas por criptografia aplicada no próprio dispositivo do usuário. A chave privada necessária para descriptografia permanece sob controle exclusivo do titular e não é armazenada nos servidores do MyHomePlus.</p>
+<div class="paragraph">O módulo de cofre de senhas destina-se exclusivamente ao uso pessoal do usuário.</div>
 
-<p>O MyHomePlus não possui acesso às chaves privadas dos usuários, nem ao conteúdo armazenado em formato legível.</p>
+<div class="paragraph">As informações armazenadas nesse módulo são protegidas por criptografia aplicada no próprio dispositivo do usuário. A chave privada necessária para descriptografia permanece sob controle exclusivo do titular e não é armazenada nos servidores do MyHomePlus.</div>
 
-<p>A funcionalidade de exportação e importação da chave privada pode estar disponível apenas para usuários de planos premium. Usuários do plano gratuito poderão não ter acesso a mecanismos de backup da chave privada.</p>
+<div class="paragraph">O MyHomePlus não possui acesso às chaves privadas dos usuários, nem ao conteúdo armazenado em formato legível.</div>
 
-<p>O usuário reconhece que:</p>
+<div class="paragraph">A funcionalidade de exportação e importação da chave privada pode estar disponível apenas para usuários de planos premium. Usuários do plano gratuito poderão não ter acesso a mecanismos de backup da chave privada.</div>
+
+<div class="paragraph">O usuário reconhece que:</div>
 
 <ul>
 <li>É responsável pelas informações inseridas.</li>
@@ -151,13 +234,19 @@
 <li>Nenhum sistema é absolutamente invulnerável.</li>
 </ul>
 
-<p>O MyHomePlus não se responsabiliza pela impossibilidade de recuperação de dados decorrente da perda, exclusão ou indisponibilidade da chave privada.</p>
+<div class="paragraph">O MyHomePlus não se responsabiliza pela impossibilidade de recuperação de dados decorrente da perda, exclusão ou indisponibilidade da chave privada.</div>
 
-<p>O MyHomePlus adota medidas de segurança, mas não garante proteção absoluta contra ataques externos, falhas técnicas ou acessos indevidos decorrentes de fatores fora de seu controle.</p>
+<div class="paragraph">O MyHomePlus adota medidas de segurança, mas não garante proteção absoluta contra ataques externos, falhas técnicas ou acessos indevidos decorrentes de fatores fora de seu controle.</div>
 
-<h2>6. USO ADEQUADO</h2>
+</div>
+</div>
 
-<p>É proibido:</p>
+<!-- 6 -->
+<div class="section">
+<div class="section-title">6. USO ADEQUADO</div>
+<div class="card">
+
+<div class="paragraph">É proibido:</div>
 
 <ul>
 <li>Utilizar o aplicativo para fins ilícitos.</li>
@@ -166,13 +255,19 @@
 <li>Interferir no funcionamento do sistema.</li>
 </ul>
 
-<p>O descumprimento pode resultar em suspensão ou exclusão da conta, sem aviso prévio.</p>
+<div class="paragraph">O descumprimento pode resultar em suspensão ou exclusão da conta, sem aviso prévio.</div>
 
-<h2>7. PLANOS PREMIUM</h2>
+</div>
+</div>
 
-<p>O aplicativo poderá oferecer funcionalidades pagas.</p>
+<!-- 7 -->
+<div class="section">
+<div class="section-title">7. PLANOS PREMIUM</div>
+<div class="card">
 
-<p>Nesses casos:</p>
+<div class="paragraph">O aplicativo poderá oferecer funcionalidades pagas.</div>
+
+<div class="paragraph">Nesses casos:</div>
 
 <ul>
 <li>Os valores serão informados previamente.</li>
@@ -180,26 +275,38 @@
 <li>Cancelamentos e reembolsos seguem as regras da plataforma de pagamento.</li>
 </ul>
 
-<p>A perda de acesso ao plano premium pode ocorrer em caso de cancelamento ou inadimplência.</p>
+<div class="paragraph">A perda de acesso ao plano premium pode ocorrer em caso de cancelamento ou inadimplência.</div>
 
-<h2>8. RETENÇÃO E EXCLUSÃO DE CONTA</h2>
+</div>
+</div>
 
-<p>O usuário pode solicitar a exclusão da conta a qualquer momento.</p>
+<!-- 8 -->
+<div class="section">
+<div class="section-title">8. RETENÇÃO E EXCLUSÃO DE CONTA</div>
+<div class="card">
 
-<p>Após a exclusão:</p>
+<div class="paragraph">O usuário pode solicitar a exclusão da conta a qualquer momento.</div>
+
+<div class="paragraph">Após a exclusão:</div>
 
 <ul>
 <li>Os dados poderão ser removidos permanentemente.</li>
 <li>Poderão ser mantidos apenas dados necessários para cumprimento de obrigações legais.</li>
 </ul>
 
-<p>Detalhes adicionais estão descritos na Política de Privacidade.</p>
+<div class="paragraph">Detalhes adicionais estão descritos na Política de Privacidade.</div>
 
-<h2>9. LIMITAÇÃO DE RESPONSABILIDADE</h2>
+</div>
+</div>
 
-<p>O aplicativo é fornecido “como está”.</p>
+<!-- 9 -->
+<div class="section">
+<div class="section-title">9. LIMITAÇÃO DE RESPONSABILIDADE</div>
+<div class="card">
 
-<p>O MyHomePlus não garante:</p>
+<div class="paragraph">O aplicativo é fornecido “como está”.</div>
+
+<div class="paragraph">O MyHomePlus não garante:</div>
 
 <ul>
 <li>Funcionamento ininterrupto.</li>
@@ -207,7 +314,7 @@
 <li>Disponibilidade contínua do serviço.</li>
 </ul>
 
-<p>Não se responsabiliza por:</p>
+<div class="paragraph">Não se responsabiliza por:</div>
 
 <ul>
 <li>Perda de dados decorrente de falhas externas.</li>
@@ -215,9 +322,15 @@
 <li>Danos indiretos ou lucros cessantes.</li>
 </ul>
 
-<h2>10. PROPRIEDADE INTELECTUAL</h2>
+</div>
+</div>
 
-<p>Todos os direitos relacionados ao aplicativo, incluindo:</p>
+<!-- 10 -->
+<div class="section">
+<div class="section-title">10. PROPRIEDADE INTELECTUAL</div>
+<div class="card">
+
+<div class="paragraph">Todos os direitos relacionados ao aplicativo, incluindo:</div>
 
 <ul>
 <li>Marca.</li>
@@ -226,24 +339,42 @@
 <li>Código-fonte.</li>
 </ul>
 
-<p>São de propriedade exclusiva do desenvolvedor.</p>
-<p>É proibida a reprodução ou distribuição sem autorização expressa.</p>
-
-<h2>11. ALTERAÇÕES DOS TERMOS</h2>
-
-<p>Estes Termos podem ser atualizados periodicamente.</p>
-
-<p>Em caso de alterações relevantes, o usuário poderá ser notificado pelo aplicativo.</p>
-
-<p>O uso contínuo após alterações implica aceitação dos novos Termos.</p>
-
-<h2>12. LEGISLAÇÃO E FORO</h2>
-
-<p>Estes Termos são regidos pelas leis da República Federativa do Brasil.</p>
-
-<p>Fica eleito o foro do domicílio do usuário, quando aplicável, nos termos da legislação consumerista.</p>
+<div class="paragraph">São de propriedade exclusiva do desenvolvedor.</div>
+<div class="paragraph">É proibida a reprodução ou distribuição sem autorização expressa.</div>
 
 </div>
+</div>
 
+<!-- 11 -->
+<div class="section">
+<div class="section-title">11. ALTERAÇÕES DOS TERMOS</div>
+<div class="card">
+
+<div class="paragraph">Estes Termos podem ser atualizados periodicamente.</div>
+
+<div class="paragraph">Em caso de alterações relevantes, o usuário poderá ser notificado pelo aplicativo.</div>
+
+<div class="paragraph">O uso contínuo após alterações implica aceitação dos novos Termos.</div>
+
+</div>
+</div>
+
+<!-- 12 -->
+<div class="section">
+<div class="section-title">12. LEGISLAÇÃO E FORO</div>
+<div class="card">
+
+<div class="paragraph">Estes Termos são regidos pelas leis da República Federativa do Brasil.</div>
+
+<div class="paragraph">Fica eleito o foro do domicílio do usuário, quando aplicável, nos termos da legislação consumerista.</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 MyHomePlus
+</footer>
+
+</div>
 </body>
 </html>
