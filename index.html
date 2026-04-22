@@ -27,7 +27,7 @@
 </head>
 <body class="bg-white text-gray-900 overflow-x-hidden">
 
-    <!-- Selo Google Play Fixo (Canto Esquerdo) -->
+    <!-- Selo Google Play Fixo (Canto Esquerdo) 
     <div class="fixed bottom-4 right-4 z-50 pointer-events-none sm:pointer-events-auto" data-aos="fade-left" data-aos-delay="1000">
         <a href="https://play.google.com/store/apps/details?id=com.luizantoniolz.MyHomePlus" target="_blank" class="block group">
             <img src="https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png" 
@@ -35,6 +35,23 @@
                 class="h-8 md:h-16 drop-shadow-lg transition-transform group-hover:scale-105 active:scale-95">
         </a>
     </div>
+    -->
+
+    <!-- Selo Google Play Fixo -->
+    <div class="fixed bottom-4 right-4 z-50" style="animation: fadeLeft 0.6s ease 1.5s both;">
+        <a href="https://play.google.com/store/apps/details?id=com.luizantoniolz.MyHomePlus" target="_blank" class="block group">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png" 
+                alt="Disponível no Google Play" 
+                class="h-8 md:h-16 drop-shadow-lg transition-transform group-hover:scale-105 active:scale-95">
+        </a>
+    </div>
+
+    <style>
+    @keyframes fadeLeft {
+        from { opacity: 0; transform: translateX(40px); }
+        to   { opacity: 1; transform: translateX(0); }
+    }
+    </style>
 
     <section class="hero-gradient px-6 pb-20 text-center">
         <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-center md:justify-start">
