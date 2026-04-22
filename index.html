@@ -54,12 +54,28 @@
                 </a>
             </div>
             
-            <p class="text-l font-medium text-gray-800" data-aos="fade-up" data-aos-delay="400">
+            <p class="text-l font-medium text-gray-800 mb-10" data-aos="fade-up" data-aos-delay="400">
                 Instalando agora, ganhe <span class="text-myhome-green font-bold">60 dias de premium grátis.</span>
             </p>
 
-            <div class="mt-16 flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                <img src="images/mockup1.png" alt="App Preview" class="w-full max-w-[320px] drop-shadow-2xl">
+            <!-- Botões de Troca -->
+            <div class="flex justify-center gap-4 mb-12">
+                <button onclick="setTheme('light')" id="btn-light" class="px-10 py-2 rounded-full font-bold transition-all bg-myhome-green text-white shadow-lg text-sm">Modo Claro</button>
+                <button onclick="setTheme('dark')" id="btn-dark" class="px-10 py-2 rounded-full font-bold transition-all bg-gray-200 text-gray-600 text-sm">Modo Escuro</button>
+            </div>
+
+            <!-- Container dos Mockups -->
+            <div class="relative h-[550px] md:h-[620px] w-full max-w-[300px] mx-auto mb-24">
+                
+                <!-- Imagem Dark -->
+                <img src="images/mockup_dark.png" id="img-dark" alt="Dark Mode" 
+                    style="left: 40px; z-index: 10; opacity: 0.4; transform: scale(0.9); filter: blur(1px);"
+                    class="absolute top-0 w-full transition-all duration-500 ease-in-out">
+                
+                <!-- Imagem Light -->
+                <img src="images/mockup_light.png" id="img-light" alt="Light Mode" 
+                    style="left: 0px; z-index: 20; opacity: 1; transform: scale(1); filter: blur(0px);"
+                    class="absolute top-0 w-full transition-all duration-500 ease-in-out drop-shadow-2xl">
             </div>
         </div>
     </section>
@@ -256,6 +272,58 @@
             duration: 800, // Duração da animação em milisegundos
             once: true,    // Anima apenas uma vez quando desce a página
         });
+    </script>
+
+    <script>
+        function setTheme(theme) {
+        const imgLight = document.getElementById('img-light');
+        const imgDark = document.getElementById('img-dark');
+        const btnLight = document.getElementById('btn-light');
+        const btnDark = document.getElementById('btn-dark');
+
+        if (theme === 'dark') {
+            // DARK VEM PARA A FRENTE (CENTRO)
+            imgDark.style.left = "0px";
+            imgDark.style.zIndex = "20";
+            imgDark.style.opacity = "1";
+            imgDark.style.transform = "scale(1)";
+            imgDark.style.filter = "blur(0px)";
+            
+            // LIGHT VAI PARA TRÁS (DESLOCA PARA A DIREITA)
+            imgLight.style.left = "40px"; 
+            imgLight.style.zIndex = "10";
+            imgLight.style.opacity = "0.4";
+            imgLight.style.transform = "scale(0.9)";
+            imgLight.style.filter = "blur(1px)";
+
+            // Botões
+            btnDark.classList.add('bg-myhome-green', 'text-white');
+            btnDark.classList.remove('bg-gray-200', 'text-gray-600');
+            btnLight.classList.add('bg-gray-200', 'text-gray-600');
+            btnLight.classList.remove('bg-myhome-green', 'text-white');
+
+        } else {
+            // LIGHT VEM PARA A FRENTE (CENTRO)
+            imgLight.style.left = "0px";
+            imgLight.style.zIndex = "20";
+            imgLight.style.opacity = "1";
+            imgLight.style.transform = "scale(1)";
+            imgLight.style.filter = "blur(0px)";
+            
+            // DARK VAI PARA TRÁS (DESLOCA PARA A DIREITA)
+            imgDark.style.left = "40px";
+            imgDark.style.zIndex = "10";
+            imgDark.style.opacity = "0.4";
+            imgDark.style.transform = "scale(0.9)";
+            imgDark.style.filter = "blur(1px)";
+
+            // Botões
+            btnLight.classList.add('bg-myhome-green', 'text-white');
+            btnLight.classList.remove('bg-gray-200', 'text-gray-600');
+            btnDark.classList.add('bg-gray-200', 'text-gray-600');
+            btnDark.classList.remove('bg-myhome-green', 'text-white');
+        }
+    }
     </script>
 
 </body>
